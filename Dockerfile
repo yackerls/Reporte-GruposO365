@@ -1,5 +1,6 @@
 FROM python:3.11-slim
 WORKDIR /app
-RUN pip install pandas
+RUN pip install pandas streamlit
 COPY . .
-CMD ["python", "script.py"]
+EXPOSE 8501
+CMD ["streamlit", "run", "app.py", "--server.address=0.0.0.0"]
