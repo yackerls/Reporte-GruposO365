@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.set_page_config(page_title="O365 Member Checker", layout="wide")
-st.title("📊 Comparador de Grupos Tenant") ("#FreshService")
+st.title("📊 Comparador de Grupos Tenant" "#FreshService")
 
 # Sección de carga de archivos
 col1, col2 = st.columns(2)
